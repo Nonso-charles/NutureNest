@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NurtureNest - Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-blue-500 to-teal-500 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo and Brand Name -->
+            <div class="flex items-center">
+                <img src="sister-and-brother.png" alt="NurtureNest Logo" class="h-12 w-12 mr-3"> <!-- Replace 'logo-placeholder.png' with your actual logo file -->
+                <span class="text-2xl font-semibold text-white">NurtureNest</span>
+            </div>
+
+            <!-- Navbar Links (Desktop and Mobile) -->
+            <div id="navLinks" class="hidden md:flex md:space-x-8 text-white">
+                <a href="#about" class="hover:text-yellow-200 transition duration-300">About Us</a>
+                <a href="#programs" class="hover:text-yellow-200 transition duration-300">Programs</a>
+                <a href="#impact" class="hover:text-yellow-200 transition duration-300">Our Impact</a>
+                <a href="#donate" class="hover:text-yellow-200 transition duration-300">Donate</a>
+                <a href="#contact" class="hover:text-yellow-200 transition duration-300">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menuButton" class="md:hidden flex items-center text-white focus:outline-none">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-gradient-to-r from-blue-500 to-teal-500 text-white space-y-4 py-4 px-6">
+            <a href="#about" class="block hover:text-yellow-200">About Us</a>
+            <a href="#programs" class="block hover:text-yellow-200">Programs</a>
+            <a href="#impact" class="block hover:text-yellow-200">Our Impact</a>
+            <a href="#donate" class="block hover:text-yellow-200">Donate</a>
+            <a href="#contact" class="block hover:text-yellow-200">Contact</a>
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <section id="about" class="bg-gradient-to-r from-blue-500 to-teal-500 text-white py-16">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+            <h2 class="text-4xl font-bold mb-6">About NurtureNest</h2>
+            <p class="text-lg mb-8 max-w-3xl mx-auto leading-relaxed">
+                At NurtureNest, we are dedicated to empowering children through education, opportunities, and care.
+                Our mission is to create a safe environment where kids can learn, grow, and thrive. We believe every child deserves a bright future, and we work tirelessly to make that vision a reality.
+            </p>
+
+            <!-- Flex container for image and text -->
+            <div class="flex flex-col-reverse md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
+                <!-- Text Content -->
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h3 class="text-2xl font-semibold mb-4">Our Mission</h3>
+                    <p class="text-lg mb-6">
+                        Our mission is simple: to provide children with the resources and support they need to build a successful future. We do this by offering educational programs, mentorship, and various activities to nurture their physical, mental, and emotional well-being.
+                    </p>
+                    <a href="volunteer.html" class="inline-block bg-yellow-500 text-gray-800 font-semibold py-2 px-6 rounded-lg hover:bg-yellow-400 transition duration-300">Get Involved</a>
+                </div>
+
+                <!-- Image Content -->
+                <div class="md:w-1/2">
+                    <img src="hero-img.jpeg" alt="NurtureNest Children" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Impact Section -->
+    <section id="impact" class="bg-white py-16">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6">Our Impact</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+                At NurtureNest, we are proud of the positive change we are making in the lives of children. Here's a look at some of the milestones we've achieved in our mission to create a brighter future for every child.
+            </p>
+
+            <!-- Impact Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Stat 1 -->
+                <div class="bg-gradient-to-r from-blue-500 to-teal-500 text-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-3xl font-bold mb-4">500+</h3>
+                    <p class="text-lg">Children Empowered</p>
+                </div>
+
+                <!-- Stat 2 -->
+                <div class="bg-gradient-to-r from-green-500 to-yellow-500 text-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-3xl font-bold mb-4">200+</h3>
+                    <p class="text-lg">Mentorship Sessions Conducted</p>
+                </div>
+
+                <!-- Stat 3 -->
+                <div class="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-3xl font-bold mb-4">100%</h3>
+                    <p class="text-lg">Education Access for Every Child</p>
+                </div>
+            </div>
+
+            <!-- Impact Description -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">How We Make a Difference</h3>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                    Our programs focus on the holistic development of children, providing educational support, mental health resources, and a safe environment where they can thrive. Through our dedicated team of volunteers, donors, and partners, we've been able to create lasting change. Our impact doesn't just end with numbers — it’s about the lives we’ve touched and the futures we’ve shaped.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs" class="bg-white py-16">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8">Our Programs</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+                At NurtureNest, we are dedicated to providing a variety of programs that empower children, promote learning, and foster growth. Our initiatives cover education, mentorship, and skill development, all designed to build a brighter future for every child.
+            </p>
+
+            <!-- Programs Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+                <!-- Program 1 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="education.jpeg" alt="Education Program" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Education Support</h3>
+                    <p class="text-gray-600 mb-4">
+                        We provide children with access to quality education resources, tutoring, and learning materials to ensure they thrive academically.
+                    </p>
+                    <a href="#learn-more" class="text-teal-500 font-semibold hover:text-teal-600 transition duration-300">Learn More</a>
+                </div>
+
+                <!-- Program 2 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="mentorship.jpeg" alt="Mentorship Program" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Mentorship</h3>
+                    <p class="text-gray-600 mb-4">
+                        Our mentorship program connects children with experienced mentors who guide them, provide advice, and help them build skills for a successful future.
+                    </p>
+                    <a href="#learn-more" class="text-teal-500 font-semibold hover:text-teal-600 transition duration-300">Learn More</a>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="life-skills.jpeg" alt="Life Skills Program" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Life Skills Training</h3>
+                    <p class="text-gray-600 mb-4">
+                        Our life skills program equips children with essential skills such as communication, problem-solving, and teamwork, preparing them for success in life.
+                    </p>
+                    <a href="#learn-more" class="text-teal-500 font-semibold hover:text-teal-600 transition duration-300">Learn More</a>
+                </div>
+
+                <!-- Program 4 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="health.jpeg" alt="Health and Wellness Program" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Health & Wellness</h3>
+                    <p class="text-gray-600 mb-4">
+                        Our health and wellness program focuses on promoting physical and mental well-being, providing children with access to healthcare and wellness resources.
+                    </p>
+                    <a href="#learn-more" class="text-teal-500 font-semibold hover:text-teal-600 transition duration-300">Learn More</a>
+                </div>
+
+                <!-- Program 5 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="creative-art.jpeg" alt="Creative Arts Program" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Creative Arts</h3>
+                    <p class="text-gray-600 mb-4">
+                        Our creative arts program allows children to explore their artistic talents, from music and painting to drama, helping them express themselves and build confidence.
+                    </p>
+                    <a href="#learn-more" class="text-teal-500 font-semibold hover:text-teal-600 transition duration-300">Learn More</a>
+                </div>
+
+                <!-- Program 6 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="sports.jpeg" alt="Sports & Recreation Program" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Sports & Recreation</h3>
+                    <p class="text-gray-600 mb-4">
+                        Our sports and recreation program encourages children to stay active, build teamwork, and develop physical strength through various activities and sports.
+                    </p>
+                    <a href="#learn-more" class="text-teal-500 font-semibold hover:text-teal-600 transition duration-300">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section id="donate" class="bg-teal-500 text-white py-16">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+            <h2 class="text-4xl font-bold mb-6 text-gray-800">Make a Difference</h2>
+            <p class="text-lg mb-8 max-w-3xl mx-auto leading-relaxed text-gray-700">
+                Your generosity helps provide education, healthcare, and life-changing support to children in need. Every donation, big or small, contributes to building a brighter future for them.
+            </p>
+
+            <!-- Donation Form -->
+            <div class="bg-white p-8 rounded-lg shadow-lg mx-auto max-w-4xl">
+                <h3 class="text-3xl font-semibold text-gray-800 mb-6">Donate Today</h3>
+
+                <form action="#" method="POST">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <!-- Donation Amount -->
+                        <div>
+                            <label for="amount" class="text-gray-700 text-lg font-semibold">Donation Amount</label>
+                            <input type="number" id="amount" name="amount" class="w-full p-3 mt-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500" placeholder="Enter Amount" required>
+                        </div>
+                        <!-- Donation Frequency -->
+                        <div>
+                            <label for="frequency" class="text-gray-700 text-lg font-semibold">Donation Frequency</label>
+                            <select id="frequency" name="frequency" class="w-full p-3 mt-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500">
+                                <option value="one-time">One-Time</option>
+                                <option value="monthly">Monthly</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Payment Details -->
+                    <div class="mb-6">
+                        <label for="payment-method" class="text-gray-700 text-lg font-semibold">Payment Method</label>
+                        <select id="payment-method" name="payment-method" class="w-full p-3 mt-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500">
+                            <option value="credit-card">Credit Card</option>
+                            <option value="paypal">PayPal</option>
+                        </select>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="mt-8">
+                        <button type="submit" class="bg-teal-600 text-white text-xl font-semibold py-3 px-8 rounded-full hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 transition duration-300">Donate Now</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Alternative Donation Methods -->
+            <div class="mt-12">
+                <p class="text-lg font-semibold mb-4 text-black">Prefer to donate via other methods?</p>
+                <p class="text-gray-500">You can also donate through bank transfers or by sending a check. Please contact us for more details.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-teal-600 text-white py-16">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+            <h2 class="text-4xl font-bold mb-6 text-gray-700">Get In Touch</h2>
+            <p class="text-lg mb-8 max-w-3xl mx-auto leading-relaxed text-gray-500">
+                We would love to hear from you! Whether you have questions, suggestions, or want to get involved, feel free to reach out.
+            </p>
+
+            <!-- Contact Form -->
+            <div class="bg-white p-8 rounded-lg shadow-lg mx-auto max-w-4xl">
+                <h3 class="text-3xl font-semibold text-gray-800 mb-6">Contact Us</h3>
+                <form action="#" method="POST">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <!-- Name -->
+                        <div>
+                            <label for="name" class="text-gray-700 text-lg font-semibold">Full Name</label>
+                            <input type="text" id="name" name="name" class="w-full p-3 mt-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500" placeholder="Your Name" required>
+                        </div>
+                        <!-- Email -->
+                        <div>
+                            <label for="email" class="text-gray-700 text-lg font-semibold">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full p-3 mt-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500" placeholder="Your Email" required>
+                        </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="mb-6">
+                        <label for="message" class="text-gray-700 text-lg font-semibold">Your Message</label>
+                        <textarea id="message" name="message" class="w-full p-3 mt-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500" rows="6" placeholder="Type your message here..." required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="mt-8">
+                        <button type="submit" class="bg-teal-600 text-white text-xl font-semibold py-3 px-8 rounded-full hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 transition duration-300">Send Message</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Contact Details</h3>
+                <p class="text-lg text-gray-700">Have any questions? Reach us via the following:</p>
+                <ul class="mt-6 text-gray-300">
+                    <li class="flex items-center mb-4">
+        <img src="email.png" alt="email.png" class="w-5 h-5">
+                        <span class="text-gray-800">Email: <a href="mailto:info@nurturenest.org" class="text-teal-400 hover:text-teal-500">info@nurturenest.org</a></span>
+                    </li>
+                    <li class="flex items-center mb-4">
+      <img src="telephone.png" alt="telephone.png" class="w-5 h-5">
+                        <span class="text-gray-900">Phone: <a href="tel:+123456789" class="text-teal-400 hover:text-teal-500">+1 (234) 567-890</a></span>
+                    </li>
+                    <li class="flex items-center">
+     <img src="location.png" alt="location.png" class="w-5 h-5">
+                        <span class="text-gray-900">Address: 123 Nurture Lane, City, Country</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-teal-800 text-white py-8">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+
+                <!-- NurtureNest Logo and Name -->
+                <div class="flex items-center">
+                    <img src="sister-and-brother.png" alt="NurtureNest Logo" class="h-12 w-auto mr-4"> <!-- Replace with actual logo -->
+                    <h1 class="text-2xl font-bold text-gray-900">NurtureNest</h1>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="flex space-x-6">
+                    <a href="#about" class="text-lg text-gray-700 hover:text-gray-700 transition duration-300">About Us</a>
+                    <a href="#programs" class="text-lg text-gray-700 hover:text-teal-700 transition duration-300">Programs</a>
+                    <a href="#donate" class="text-lg text-gray-700 hover:text-teal-700 transition duration-300">Donate</a>
+                    <a href="#contact" class="text-lg text-gray-700 hover:text-teal-700 transition duration-300">Contact</a>
+                </div>
+
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="mt-6 flex justify-center space-x-6">
+                <a href="https://facebook.com" target="_blank" class="text-xl text-teal-300 hover:text-teal-500 transition duration-300">
+                    <img src="tik-tok.png" alt="tik-tok.png" class="w-10 h-10">
+                </a>
+                <a href="https://twitter.com" target="_blank" class="text-xl text-teal-900 hover:text-teal-500 transition duration-300">
+                    <img src="social-media.png" alt="" class="w-10 h-10">
+                </a>
+                <a href="https://instagram.com" target="_blank" class="text-xl text-teal-900 hover:text-teal-500 transition duration-300">
+                    <img src="youtube.png" alt="youtube.png" class="w-10 h-10">
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="text-xl text-teal-900 hover:text-teal-500 transition duration-300">
+                    <img src="instagram.png" alt="" class="w-10 h-10" />
+                </a>
+            </div>
+
+            <!-- Copyright Information -->
+            <div class="mt-6 text-center text-sm text-gray-900">
+                <p>&copy; 2024 NurtureNest. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Include Font Awesome for social icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+    <script>
+        // JavaScript for toggling the mobile menu
+        document.getElementById('menuButton').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NurtureNest - Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+<section id="volunteer" class="bg-teal-100 py-16">
+    <div class="container mx-auto px-6 md:px-12">
+        <!-- Title Section -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-teal-800 mb-4">Join Our Volunteer Team</h2>
+            <p class="text-lg text-gray-600">At NurtureNest, we believe in the power of community. Help us make a difference in the lives of children in need by becoming a part of our volunteer program.</p>
+        </div>
+
+        <!-- Volunteer Information -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Volunteer Benefits Section -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold text-teal-800 mb-4">Why Volunteer with NurtureNest?</h3>
+                <ul class="space-y-4 text-lg text-gray-600">
+                    <li class="flex items-start">
+                        <span class="text-teal-500 mr-3">✔</span> Make a positive impact in children's lives.
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-teal-500 mr-3">✔</span> Gain valuable experience and skills.
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-teal-500 mr-3">✔</span> Be part of a passionate and supportive community.
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-teal-500 mr-3">✔</span> Opportunities to work on different programs and projects.
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-teal-500 mr-3">✔</span> Receive recognition and certificates for your contributions.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Volunteer Roles Section -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold text-teal-800 mb-4">Volunteer Roles</h3>
+                <p class="text-lg text-gray-600 mb-4">We offer a variety of volunteer roles that fit different interests and skill sets. Whether you have a passion for working with children or helping with administrative tasks, there’s a role for you!</p>
+                <ul class="space-y-4 text-lg text-gray-600">
+                    <li class="flex items-start">
+                        <span class="text-teal-500 mr-3">✔</span> Child Care and Mentorship
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-teal-500 mr-3">✔</span> Event Planning and Coordination
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-teal-500 mr-3">✔</span> Fundraising and Outreach
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-teal-500 mr-3">✔</span> Administrative Support
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-teal-500 mr-3">✔</span> Marketing and Social Media Management
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Volunteer Application Form -->
+        <div class="mt-16">
+            <h3 class="text-2xl font-semibold text-teal-800 text-center mb-6">Apply to Volunteer</h3>
+            <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-lg font-medium text-teal-800">Full Name</label>
+                        <input type="text" id="name" name="name" required class="mt-2 p-4 w-full bg-gray-100 rounded-lg border border-teal-300 text-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-500">
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-lg font-medium text-teal-800">Email Address</label>
+                        <input type="email" id="email" name="email" required class="mt-2 p-4 w-full bg-gray-100 rounded-lg border border-teal-300 text-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-500">
+                    </div>
+
+                    <div>
+                        <label for="role" class="block text-lg font-medium text-teal-800">Select Role</label>
+                        <select id="role" name="role" class="mt-2 p-4 w-full bg-gray-100 rounded-lg border border-teal-300 text-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-500">
+                            <option value="child-care">Child Care and Mentorship</option>
+                            <option value="event-planning">Event Planning</option>
+                            <option value="fundraising">Fundraising and Outreach</option>
+                            <option value="admin-support">Administrative Support</option>
+                            <option value="marketing">Marketing and Social Media</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-lg font-medium text-teal-800">Why do you want to volunteer with us?</label>
+                        <textarea id="message" name="message" rows="4" class="mt-2 p-4 w-full bg-gray-100 rounded-lg border border-teal-300 text-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-500"></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="px-6 py-3 bg-teal-600 text-white rounded-lg shadow-md hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 text-gray-900">Submit Application</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+</body>
+</html>
